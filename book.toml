@@ -1,0 +1,7 @@
+[book]
+title = "Decentralised Identity and ZK Credentials"
+language = "en"
+src = "."
+
+[output.html]
+git-repository-url = "https://github.com/<you>/decentralized-identity-zk-credentials"

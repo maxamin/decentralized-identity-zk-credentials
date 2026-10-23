@@ -1,0 +1,21 @@
+# Glossary
+
+- **DID (decentralised identifier):** URI that resolves to a DID document listing keys and service endpoints.
+- **DID method:** rules for creating, resolving, updating and deactivating DIDs of one type (for example `did:web`, `did:key`).
+- **Verifiable credential (VC):** issuer-signed set of claims about a subject, held by a holder.
+- **Issuer / holder / verifier:** the three roles in a credential system.
+- **Presentation:** what a holder sends to a verifier, derived from one or more credentials.
+- **Selective disclosure:** revealing only some attributes of a credential.
+- **SD-JWT:** IETF salted-hash selective disclosure format for JWTs (RFC 9901).
+- **Disclosure (SD-JWT):** base64url-encoded `[salt, name, value]` array whose hash appears in the signed token.
+- **KB-JWT:** key binding JWT; holder-signed proof of possession with nonce, audience and hash of the presentation.
+- **BBS signatures:** pairing-based multi-message signatures supporting randomised zero-knowledge disclosure proofs.
+- **Unlinkability:** property that presentations cannot be linked to each other or to issuance.
+- **Holder binding:** mechanism ensuring only the legitimate holder can present a credential.
+- **Nullifier:** value derived from a holder secret and a scope that prevents double use without revealing identity.
+- **Scope:** context (topic) within which a nullifier may be used once.
+- **Identity commitment:** public value (Merkle leaf) derived from a holder's secret identity.
+- **Anonymity set:** the set of people who could plausibly have produced a given proof.
+- **Status list:** published bitmap indicating revoked or suspended credentials.
+- **Quasi-identifier:** combination of non-identifying attributes that can identify a person when linked with other data.
+- **Trust registry:** list of issuers and keys a verifier accepts.
